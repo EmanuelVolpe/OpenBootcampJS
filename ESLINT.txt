@@ -1,0 +1,69 @@
+PARA USAR ESLINT:
+
+#INSTALACION
+yarn add eslint --dev
+
+#CONFIGURACION
+yarn create @eslint/config
+
+#CORRER ESLINT
+yarn run eslint "MI_ARCHIVO.js"
+    
+#ARREGLAR PROBLEMAS DETECTADOS
+yarn run eslint "MI_ARCHIVO.js" --fix
+
+
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "google",
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "no-trailing-spaces": "error",
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ]
+    }
+}
